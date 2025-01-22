@@ -8,9 +8,9 @@ const app = express();
 app.use(bodyParser.json());
 
 // Konfigurasi OAuth
-const CLIENT_ID = "YOUR_CLIENT_ID";
-const CLIENT_SECRET = "YOUR_CLIENT_SECRET";
-const REDIRECT_URI = "http://localhost:3000/oauth2callback"; // Redirect URI sesuai dengan yang diatur di Google Cloud Console
+const CLIENT_ID = "351423920988-r76n0qoa1nsgqbi692mdi0rln0m7l20s.apps.googleusercontent.com";
+const CLIENT_SECRET = "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";
+const REDIRECT_URI = "https://tes-56h1iu0u3-korigrosirs-projects.vercel.app"; // Redirect URI sesuai dengan yang diatur di Google Cloud Console
 
 const oAuth2Client = new OAuth2Client(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
 
