@@ -24,7 +24,7 @@ app.get("/auth", (req, res) => {
 });
 
 // Endpoint Redirect URI untuk menerima authorization code
-app.get("/oauth2callback", async (req, res) => {
+app.get("api/oauth2callback", async (req, res) => {
   const code = req.query.code;
 
   if (!code) {
