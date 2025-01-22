@@ -9,8 +9,8 @@ app.get('/oauth2callback', async (req, res) => {
         // Tukar kode otorisasi dengan access token
         const response = await axios.post('https://oauth2.googleapis.com/token', {
             code: authorizationCode,
-            client_id: 'YOUR_CLIENT_ID',
-            client_secret: 'YOUR_CLIENT_SECRET',
+            client_id: '351423920988-r76n0qoa1nsgqbi692mdi0rln0m7l20s.apps.googleusercontent.com',
+            client_secret: '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',
             redirect_uri: 'https://maskorii.vercel.app/oauth2callback',
             grant_type: 'authorization_code'
         });
